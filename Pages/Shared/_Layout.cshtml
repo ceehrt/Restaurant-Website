@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f0e8" />
+    <meta name="description" content="Seasonal plates, local ingredients, and a warm welcome at Olive &amp; Ember, Wellington." />
+    <title>@ViewData["Title"]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" asp-page="/Index" aria-label="Olive and Ember home">
+            <span class="brand-mark" aria-hidden="true">O<span>&amp;</span>E</span>
+            <span class="brand-name">OLIVE <span>&amp;</span> EMBER</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#story">Our story</a>
+            <a href="#menu">The menu</a>
+            <a href="#visit">Visit us</a>
+        </nav>
+        <a class="header-cta" href="mailto:hello@oliveandember.nz?subject=Table%20reservation">Book a table <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main-content">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" asp-page="/Index">OLIVE <span>&amp;</span> EMBER</a>
+        <p>Good food, good company. &copy; @DateTime.Now.Year Olive &amp; Ember.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+</body>
+</html>
